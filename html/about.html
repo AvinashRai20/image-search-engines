@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Image Search Engine</title>
+    <link rel="stylesheet" href="../css/imageserching.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="site-header page-header">
+        <a class="brand-link" href="imageseaechingEngine.html">
+            <img class="brand-logo" src="../images/107.jpg" alt="Image Search Engine logo">
+            <div class="brand-text">
+                <span>Premium Discovery</span>
+                <strong>Image Search</strong>
+            </div>
+        </a>
+        <nav class="main-nav">
+            <a href="imageseaechingEngine.html"><i class="fas fa-home"></i> Home</a>
+            <a href="History.html"><i class="fas fa-history"></i> History</a>
+            <a href="Following.html"><i class="fas fa-users"></i> Following</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        </nav>
+        <div class="header-actions">
+            <a id="signInLink" class="button button-outline" href="login.html">Sign In</a>
+            <a id="signOutLink" class="button button-primary" href="#" style="display:none;" onclick="signOut(); return false;">Sign Out</a>
+        </div>
+    </header>
+
+    <main style="max-width: 1180px; margin: 0 auto; padding: 40px 20px;">
+        <section class="hero-block">
+            <div class="hero-copy">
+                <span class="eyebrow">About Our Project</span>
+                <h1>Premium Image Search Engine</h1>
+                <p>Discover high-quality images fast. Built for creators with modern design and smart search.</p>
+            </div>
+            <div class="hero-media">
+                <img src="../images/logo-color.png" alt="Logo">
+                <img src="../images/107.jpg" alt="Hero">
+            </div>
+        </section>
+
+        <section class="about-story" style="background: rgba(255,255,255,0.95); padding: 40px; border-radius: 24px; margin: 40px 0; box-shadow: 0 20px 40px rgba(15,23,42,0.1);">
+            <h2 style="text-align: center; margin-bottom: 30px;">Why We Created This</h2>
+            <p>Our image search engine is created to remove the frustration of endless browsing. Every person who opens this site should immediately feel that visuals are easy to discover, easy to compare, and easy to use. The first step in our process was
+                to design a clean homepage with a powerful search bar on top. Then we built an experience where every image result appears in a neat box, with the author, title, and direct preview clearly visible.</p>
+            <p>We believe a good search engine is more than links — it is a destination. It should offer ideas, trust, and visual motivation. That's why this website includes a professional header, responsive layout, and attractive cards that guide users
+                through search categories. From the beginning, we focused on making the page feel modern and polished, with color accents, soft shadows, and smooth spacing.</p>
+            <p>Every part of this website is purposeful: from the top search field to the horizontal preview banners, from the creative section cards to the responsive mobile layout. We wanted visitors to feel confident, inspired, and ready to create.</p>
+            <p>Creating this engine involved three major steps: designing a strong brand and navigation, building the search experience with smart results, and writing a beautiful about section that explains why this project exists. The result is a professional
+                image search engine that is both attractive and functional.</p>
+            <p>When you use this engine, you are using a platform built for discovery. You can search categories like travel, design, food, and technology, and immediately find a set of images that match your needs. The goal is not just to show pictures;
+                it is to help you find the right visual story.</p>
+            <p>This site is made for creators, entrepreneurs, students, and anyone who wants better image search. The interface is clean, the search is fast, and the experience is built to impress.</p>
+        </section>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 40px;">
+            <div style="background: white; padding: 24px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="margin-bottom: 12px;">Modern Design</h3>
+                <p>Clean, responsive layout with beautiful gradients and smooth animations.</p>
+            </div>
+            <div style="background: white; padding: 24px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="margin-bottom: 12px;">Fast Search</h3>
+                <p>Powered by Unsplash API - instant results with perfect grid layout.</p>
+            </div>
+            <div style="background: white; padding: 24px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                <h3 style="margin-bottom: 12px;">Creator Focused</h3>
+                <p>Built for designers, marketers, students - professional & inspiring.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div>
+                <h3>Image Search Engine</h3>
+                <p>Beautiful search, outstanding results, and a polished experience for every visitor.</p>
+            </div>
+            <div class="footer-links">
+                <a href="imageseaechingEngine.html">Home</a>
+                <a href="History.html">History</a>
+                <a href="Following.html">Following</a>
+                <a href="login.html">Sign In</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Image Search Engine</span>
+            <span>Designed for creators and teams.</span>
+        </div>
+        <div class="feedback-section">
+            <h3>Leave Feedback</h3>
+            <textarea class="message-box" placeholder="Share your thoughts about our image search engine..."></textarea>
+            <div class="feedback-buttons">
+                <button class="feedback-btn btn-primary">Send Feedback</button>
+                <button class="feedback-btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Following</title>
+    <link rel="stylesheet" href="../css/imageserching.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="site-header page-header">
+        <a class="brand-link" href="imageseaechingEngine.html">
+            <img class="brand-logo" src="../images/107.jpg" alt="Image Search Engine logo">
+            <div class="brand-text">
+                <span>Premium Discovery</span>
+                <strong>Image Search</strong>
+            </div>
+        </a>
+        <nav class="main-nav">
+            <a href="imageseaechingEngine.html"><i class="fas fa-home"></i> Home</a>
+            <a href="History.html"><i class="fas fa-history"></i> History</a>
+            <a href="Following.html"><i class="fas fa-users"></i> Following</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        </nav>
+        <div class="header-actions">
+            <a id="signInLink" class="button button-outline" href="login.html">Sign In</a>
+            <a id="signOutLink" class="button button-primary" href="#" style="display:none;" onclick="signOut(); return false;">Sign Out</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-block">
+            <div class="hero-copy">
+                <span class="eyebrow">Our Principles</span>
+                <h1>What We Follow</h1>
+                <p>Design principles making this search engine perfect.</p>
+            </div>
+            <div class="hero-media">
+                <img src="../images/logo-color.png" alt="Principles">
+            </div>
+        </section>
+
+        <section class="follow-summary" style="background: rgba(255,255,255,0.95); padding: 40px; border-radius: 24px; margin: 40px 0; box-shadow: 0 20px 40px rgba(15,23,42,0.1);">
+            <h2 style="text-align: center; margin-bottom: 40px;">Core Design Principles</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                <div style="background: white; padding: 28px; border-radius: 20px; box-shadow: 0 12px 32px rgba(0,0,0,0.1); text-align: center;">
+                    <h3>Clarity First</h3>
+                    <p>Simple navigation, clear search, intuitive layout for instant understanding.</p>
+                </div>
+                <div style="background: white; padding: 28px; border-radius: 20px; box-shadow: 0 12px 32px rgba(0,0,0,0.1); text-align: center;">
+                    <h3>Performance Optimized</h3>
+                    <p>Lightning-fast searches, smooth scrolling, and responsive design across all devices.</p>
+                </div>
+                <div style="background: white; padding: 28px; border-radius: 20px; box-shadow: 0 12px 32px rgba(0,0,0,0.1); text-align: center;">
+                    <h3>Visual Excellence</h3>
+                    <p>Beautiful image grids, modern aesthetics, and inspiring design that delights users.</p>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 30px; font-style: italic; color: #475569;">
+                This website follows simplicity, performance, and a strong visual direction. Our goal is to provide a search environment that feels helpful, exciting, and easy to use.
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div>
+                <h3>Image Search Engine</h3>
+                <p>Beautiful search, outstanding results, and a polished experience for every visitor.</p>
+            </div>
+            <div class="footer-links">
+                <a href="imageseaechingEngine.html">Home</a>
+                <a href="History.html">History</a>
+                <a href="Following.html">Following</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Sign In</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Image Search Engine</span>
+            <span>Designed for creators and teams.</span>
+        </div>
+        <div class="feedback-section">
+            <h3>Leave Feedback</h3>
+            <textarea class="message-box" placeholder="Share your thoughts about our image search engine..."></textarea>
+            <div class="feedback-buttons">
+                <button class="feedback-btn btn-primary">Send Feedback</button>
+                <button class="feedback-btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+</body>
+
+</html>

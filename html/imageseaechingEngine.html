@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    <link rel="manifest" href="#" data-placeholder="PWA manifest">
+    <title>Image Search Engine2</title>
+    <link rel="stylesheet" href="../css/imageserching_fixed.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header class="site-header page-header">
+        <a class="brand-link" href="imageseaechingEngine.html">
+            <img class="brand-logo" src="../images/107.jpg" alt="Image Search Engine logo">
+            <div class="brand-text">
+                <span>Premium Discovery</span>
+                <strong>Image Search Engine</strong>
+            </div>
+        </a>
+        <nav class="main-nav">
+            <a href="History.html"><i class="fas fa-history"></i> History</a>
+            <a href="Following.html"><i class="fas fa-users"></i> Following</a>
+            <a href="about.html"><i class="fas fa-info-circle"></i> About</a>
+        </nav>
+        <div class="header-actions">
+            <a id="signInLink" class="button button-outline" href="login.html"><i class="fas fa-sign-in-alt"></i> Sign In</a>
+            <a id="signOutLink" class="button button-primary" href="#" style="display:none;" onclick="signOut(); return false;"><i class="fas fa-sign-out-alt"></i> Sign Out</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="search-section">
+            <form id="Search-form" class="search-form" aria-label="Image search form">
+                <select id="category-select" class="category-dropdown" aria-label="Select image category">
+                    <option value="">All Categories</option>
+                    <option value="nature">Nature</option>
+                    <option value="travel">Travel</option>
+                    <option value="portrait">Portrait</option>
+                    <option value="abstract">Abstract</option>
+                    <option value="technology">Technology</option>
+                </select>
+                <input type="text" id="Search-box" placeholder="🔍 Discover amazing images..." autocomplete="off" required aria-label="Search images">
+                <button type="submit" class="search-btn" aria-label="Search"><i class="fas fa-search"></i></button>
+                <button type="button" class="voice-btn" title="Voice Search" aria-label="Voice search"><i class="fas fa-microphone"></i></button>
+            </form>
+        </section>
+
+        <section class="quick-tags-section hide-on-search">
+            <div class="quick-tags-wrapper search-tags">
+                <strong>Quick Search:</strong>
+                <a href="#" data-query="Nature">Nature</a>
+                <a href="#" data-query="Travel">Travel</a>
+                <a href="#" data-query="Food">Food</a>
+                <a href="#" data-query="Technology">Tech</a>
+                <a href="#" data-query="Abstract">Abstract</a>
+                <a href="#" data-query="Portrait">Portrait</a>
+            </div>
+        </section>
+
+        <section class="hero-block hide-on-search">
+            <div class="hero-copy">
+                <span class="eyebrow">World's Best Image Search</span>
+                <h1>Discover Perfect Images Instantly</h1>
+                <p class="hero-description">Ultra-fast search powered by Unsplash API. Professional grid layout with 6 images per row, author info, and infinite scroll. Built for designers, marketers & creators.</p>
+                <div class="hero-chips">
+                    <span>Fast search</span>
+                    <span>Creative assets</span>
+                    <span>Trending collections</span>
+                </div>
+            </div>
+            <div class="hero-media">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&q=80" alt="Abstract art">
+                <img src="https://images.unsplash.com/photo-1541701494587-cb58502866ab?auto=format&fit=crop&w=400&q=80" alt="Nature landscape">
+                <img src="https://images.unsplash.com/photo-1469362107686-38a3b7ddae7f?auto=format&fit=crop&w=400&q=80" alt="Creative design">
+                <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=400&q=80" alt="Technology">
+                <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=400&q=80" alt="Food photography">
+                <img src="https://images.unsplash.com/photo-1544965888-7b32b939a75f?auto=format&fit=crop&w=400&q=80" alt="Travel scene">
+                <img src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?auto=format&fit=crop&w=400&q=80" alt="Architecture">
+                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?auto=format&fit=crop&w=400&q=80" alt="More abstract">
+            </div>
+        </section>
+
+        <section class="info-strip hide-on-search">
+            <div class="info-card">
+                <h3>Fast image results</h3>
+                <p>Search instantly with clear previews and sharp content.</p>
+            </div>
+            <div class="info-card">
+                <h3>Designed for professionals</h3>
+                <p>Modern layout, bright accents, and a polished browsing experience.</p>
+            </div>
+            <div class="info-card">
+                <h3>Responsive design</h3>
+                <p>Looks great on desktop, tablet, and mobile screens.</p>
+            </div>
+        </section>
+
+        <section class="feature-panel hide-on-search">
+            <article class="feature-card">
+                <span class="badge">01</span>
+                <h3>Search smarter</h3>
+                <p>Use relevant terms to discover the best visuals for your project.</p>
+            </article>
+            <article class="feature-card">
+                <span class="badge">02</span>
+                <h3>Explore curated ideas</h3>
+                <p>See image categories, suggestions, and trending collections.</p>
+            </article>
+            <article class="feature-card">
+                <span class="badge">03</span>
+                <h3>Build with confidence</h3>
+                <p>Perfect for websites, presentations, stories, and social campaigns.</p>
+            </article>
+        </section>
+
+        <section class="result-header">
+            <p id="search-status">Search any topic to begin exploring image results.</p>
+            <div id="loading-spinner" class="spinner hide">
+                <div class="spinner-ring"></div>
+                <span>Searching...</span>
+            </div>
+        </section>
+
+        <section id="search-result" class="search-results"></section>
+
+        <div class="results-actions">
+            <button id="Show-More-btn" class="load-more">Load more results</button>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div>
+                <h3>Image Search Engine</h3>
+                <p>Beautiful search, outstanding results, and a polished experience for every visitor. Our motive: Make image discovery fast, beautiful, and inspiring for creators worldwide.</p>
+            </div>
+            <div class="footer-links">
+                <a href="imageseaechingEngine.html">Home</a>
+                <a href="History.html">History</a>
+                <a href="Following.html">Following</a>
+                <a href="about.html">About</a>
+                <a href="login.html">Sign In</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© 2026 Image Search Engine</span>
+            <span>Designed for creators and teams.</span>
+        </div>
+        <div class="feedback-section">
+            <h3>Leave Feedback</h3>
+            <textarea class="message-box" placeholder="Tell us what you think about our image search engine..."></textarea>
+            <div class="feedback-buttons">
+                <button class="feedback-btn btn-primary" onclick="alert('Thank you for your feedback!')">Send Feedback</button>
+                <button class="feedback-btn btn-secondary">Cancel</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/auth.js"></script>
+    <script src="../js/hy2.js"></script>
+    <script src="../js/voice-search.js"></script>
+    <script src="../js/modal.js"></script>
+</body>
+
+</html>
